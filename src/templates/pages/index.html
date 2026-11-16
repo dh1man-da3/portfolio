@@ -1,0 +1,105 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<!-- ========================= -->
+<!-- Hero Section -->
+<!-- ========================= -->
+
+<section class="hero">
+
+    <div class="hero-container">
+
+        <!-- Profile Image -->
+
+        <div class="hero-image">
+
+            <img src="{{ asset('images/profile.jpeg') }}" alt="Portrait of {{ site.name }}">
+
+        </div>
+
+
+        <!-- Hero Text -->
+
+        <div class="hero-text">
+
+            <h1 class="hero-title">
+                {{ site.name }}
+            </h1>
+
+            <p class="hero-subtitle">
+                {{ site.role }}
+            </p>
+
+            <p class="hero-description">
+                Passionate about scientific computing, physics research, and building computational models to understand complex physical systems.
+            </p>
+
+
+            <!-- Buttons -->
+
+            <div class="hero-buttons">
+
+                <a href="{{ route('projects') }}" class="btn-primary">
+                    View My Projects
+                </a>
+
+                <a href="{{ route('about') }}" class="btn-secondary">
+                    About Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- Quick Highlights Section -->
+<!-- ========================= -->
+
+<section class="highlights">
+
+    <div class="highlight-container">
+
+        <div class="highlight-card">
+
+            <h3>Scientific Computing</h3>
+
+            <p>
+                Developing computational models and simulations to analyze physical phenomena.
+            </p>
+
+        </div>
+
+
+        <div class="highlight-card">
+
+            <h3>Physics Projects</h3>
+
+            <p>
+                Experience with electronics systems, energy technologies, and computational physics research.
+            </p>
+
+        </div>
+
+
+        <div class="highlight-card">
+
+            <h3>Data Analysis</h3>
+
+            <p>
+                Applying Python tools such as NumPy, Pandas, and Matplotlib for data analysis and visualization.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{% endblock %}

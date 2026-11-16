@@ -1,0 +1,42 @@
+[
+  {
+    "key": "home",
+    "label": "Home",
+    "template": "pages/index.html",
+    "output": "index.html",
+    "url": "/",
+    "description": "Dhiman Das \u2014 BSc Physics student interested in theoretical physics, scientific computing, and modelling."
+  },
+  {
+    "key": "about",
+    "label": "About",
+    "template": "pages/about.html",
+    "output": "about/index.html",
+    "url": "/about/",
+    "description": "Education and academic interests in physics, philosophy of science, and scientific computing."
+  },
+  {
+    "key": "projects",
+    "label": "Projects",
+    "template": "pages/projects.html",
+    "output": "projects/index.html",
+    "url": "/projects/",
+    "description": "Physics, data analysis, energy systems, and electronics projects by Dhiman Das."
+  },
+  {
+    "key": "skills",
+    "label": "Skills",
+    "template": "pages/skills.html",
+    "output": "skills/index.html",
+    "url": "/skills/",
+    "description": "Physics research skills, programming, scientific computing, and development tools."
+  },
+  {
+    "key": "contact",
+    "label": "Contact",
+    "template": "pages/contact.html",
+    "output": "contact/index.html",
+    "url": "/contact/",
+    "description": "Get in touch about physics research, scientific computing, and academic collaborations."
+  }
+]

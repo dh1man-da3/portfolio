@@ -1,0 +1,90 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<!-- ========================= -->
+<!-- Skills Header -->
+<!-- ========================= -->
+
+<section class="skills-header">
+
+    <div class="skills-header-container">
+
+        <h1>Skills</h1>
+
+        <p class="skills-intro">
+            A combination of physics training, computational methods,
+            and modern programming tools that support my academic and
+            research interests.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- Skills Section -->
+<!-- ========================= -->
+
+<section class="skills-section">
+
+    <div class="skills-container">
+
+        {% for skill in skills %}
+
+        <div class="skill-card">
+
+            <div class="skill-title">
+
+                <span>{{ skill.name }}</span>
+
+                <span class="skill-percent">{{ skill.level }}%</span>
+
+            </div>
+
+            <div class="skill-bar">
+
+                <div class="skill-progress" style="width: {{ skill.level }}%;"></div>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- Tools & Interests -->
+<!-- ========================= -->
+
+<section class="tools-section">
+
+    <div class="tools-container">
+
+        <h2>Tools & Platforms</h2>
+
+        <p>
+            My workflow primarily revolves around open-source technologies.
+            I enjoy working in Linux environments and designing clean user
+            experiences for developer tools.
+        </p>
+
+        <ul class="tools-list">
+            <li>Fedora Linux</li>
+            <li>Python & Scientific Libraries</li>
+            <li>Git & Version Control</li>
+            <li>Flask Web Development</li>
+            <li>Linux UI/UX Customization</li>
+            <li>Scientific Writing & Documentation</li>
+        </ul>
+
+    </div>
+
+</section>
+
+{% endblock %}

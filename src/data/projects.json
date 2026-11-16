@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Hand Gesture Sensor System",
+    "description": "An analog electronics project that detects and interprets human hand gestures using sensor-based circuitry. The system converts physical hand movements into electronic signals that can control devices.",
+    "image": "hand_gesture_system.png"
+  },
+  {
+    "title": "Data Science Analysis Project",
+    "description": "A Python-based data science project involving data analysis, visualization, and visualization using libraries such as Pandas and Matplotlib to explore patterns in scientific datasets.",
+    "image": "data_science.png"
+  },
+  {
+    "title": "Hydrogen Energy and Solar Cell Study",
+    "description": "A small research-oriented project exploring hydrogen as a clean energy carrier and studying the working principles of solar cells as renewable energy technologies.",
+    "image": "hydrogen_energy.png"
+  },
+  {
+    "title": "Computational Modelling of Radioactive Decay",
+    "description": "A computational physics project that models the exponential decay behavior of radioactive materials using numerical simulation techniques in Python.",
+    "image": "radioactive_decay.png"
+  }
+]

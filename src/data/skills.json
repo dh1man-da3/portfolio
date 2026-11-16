@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Python Programming",
+    "level": 90
+  },
+  {
+    "name": "Scientific Computing",
+    "level": 85
+  },
+  {
+    "name": "Data Analysis",
+    "level": 80
+  },
+  {
+    "name": "Flask Web Development",
+    "level": 75
+  },
+  {
+    "name": "Linux (Fedora)",
+    "level": 85
+  },
+  {
+    "name": "HTML & CSS",
+    "level": 75
+  }
+]

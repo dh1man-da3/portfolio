@@ -1,0 +1,28 @@
+{
+  "name": "Dhiman Das",
+  "title": "Dhiman Das | Physics Portfolio",
+  "description": "A personal academic portfolio featuring physics, computational modelling, and scientific computing.",
+  "role": "BSc Physics Student",
+  "university": "Chandigarh University",
+  "program": "B.Sc Physics",
+  "location": "Sambalpur, Odisha, India",
+  "email": "",
+  "social_links": [
+    {
+      "label": "Medium",
+      "url": ""
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/dh1man-da3"
+    },
+    {
+      "label": "LinkedIn",
+      "url": ""
+    },
+    {
+      "label": "ResearchGate",
+      "url": ""
+    }
+  ]
+}

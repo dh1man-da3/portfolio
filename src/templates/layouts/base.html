@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ site.title if page.key == "home" else page.label + " | " + site.name }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="theme-color" content="#0f0f10">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <!-- Google Font (modern clean font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Navigation Bar -->
+    <!-- ========================= -->
+
+    <nav class="navbar" aria-label="Main navigation">
+
+        <div class="nav-container">
+
+            <div class="logo">
+                {{ site.name }}
+            </div>
+
+            <ul class="nav-links">
+
+                {% for item in navigation %}
+                <li><a href="{{ route(item.key) }}"{% if page.key == item.key %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ========================= -->
+    <!-- Page Content -->
+    <!-- ========================= -->
+
+    <main id="main-content" class="main-content">
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <p>
+                © {{ year }} {{ site.name }}
+            </p>
+
+            <p>
+                {{ site.role }} • {{ site.university }}
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="{{ asset('js/script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<!-- ========================= -->
+<!-- Projects Header -->
+<!-- ========================= -->
+
+<section class="projects-header">
+
+    <div class="projects-header-container">
+
+        <h1>Projects</h1>
+
+        <p class="projects-intro">
+            A collection of academic and personal projects exploring physics, computational modelling,
+            data analysis, and electronics systems.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- Project Gallery -->
+<!-- ========================= -->
+
+<section class="projects-gallery">
+
+    <div class="projects-container">
+
+        {% for project in projects %}
+
+        <div class="project-card">
+
+            <div class="project-image">
+
+                <img src="{{ asset('images/' + project.image) }}" alt="{{ project.title }}">
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>{{ project.title }}</h3>
+
+                <p>
+                    {{ project.description }}
+                </p>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- Research Interest Section -->
+<!-- ========================= -->
+
+<section class="projects-note">
+
+    <div class="projects-note-container">
+
+        <h2>Research Direction</h2>
+
+        <p>
+            My projects often combine concepts from physics with computational tools.
+            I am particularly interested in using programming and simulation methods
+            to explore physical systems such as energy technologies, statistical
+            processes, and quantum phenomena.
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}

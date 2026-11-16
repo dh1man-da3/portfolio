@@ -1,0 +1,18 @@
+# Generated site (produced automatically by GitHub Actions)
+dist/
+
+# Python build environment
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary files
+*.log
+*.swp
